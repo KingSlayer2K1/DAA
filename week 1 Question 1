@@ -1,0 +1,30 @@
+import java.util.*;
+class search
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the size of the array : ");
+        int n=sc.nextInt();
+        int b;
+        ArrayList<Integer> s=new ArrayList<Integer>();
+        System.out.print("Enter the elements in the array : ");
+        for(int i=0;i<n;++i)
+        {
+            b=sc.nextInt();
+            s.add(b);
+        }
+        System.out.print("Enter the element to be searched : ");
+        int a=sc.nextInt();
+        int i;
+        for(i=0;i<n;++i)
+        {
+            if(a==s.get(i))
+            {
+                System.out.print("Element found \n ");
+                break;
+            }
+        }
+        System.out.print("Total comparisions : "+i);
+    }
+}
